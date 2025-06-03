@@ -26,11 +26,11 @@
       font-size: 2em;
     }
     img {
-    width: 400px;
+    width: 200px;
     }
     @media (max-width: 480px) {
       img {
-          width: 100%;
+          width: 75%;
       }
     }
     nav {
@@ -65,6 +65,9 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    pres {
+      color: black;
+    }
     footer {
       background: #333;
       color: white;
@@ -88,17 +91,17 @@
 <body>
 
 <header>
-
-  <div>
-    <img src="IMG_4921.jpg">
-   </div>
-  <div>
-    <h1 color="black">Prénom Nom</h1>
-    <p>Étudiant en Bachelor Informatique en Bachelor 1 </p>
-    <p> à la rentrée de Septembre 2025</p>
-    <p>Ecole ESGI Aix-en-Provence</p>
+   <div class="grid">
+    <div>
+      <img src="IMG_4921.jpg">
+     </div>
+    <div class="pres">
+      <h1>Prénom Nom</h1>
+      <p>Étudiant en Bachelor Informatique en Bachelor 1 </p>
+      <p> à la rentrée de Septembre 2025</p>
+      <p>Ecole ESGI Aix-en-Provence</p>
+    </div>
   </div>
-
 </section>
 
   <nav>
@@ -144,8 +147,8 @@
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>📧 <a href="mailto:ton.email@mail.com">ton.email@mail.com</a><br>
-     🔗 <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a> – <a href="https://github.com/tonprofil" target="_blank">GitHub</a></p>
+  <p><a href="mailto:ton.email@mail.com">ton.email@mail.com</a><br>
+     <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a> – <a href="https://github.com/tonprofil" target="_blank">GitHub</a></p>
 </section>
 
 <footer>
