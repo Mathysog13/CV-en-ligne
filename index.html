@@ -166,17 +166,40 @@
   <h2>Contact</h2>
   <p><a href="mailto:mathysog13@mail.com">mathysog13@mail.com</a> - <a href="https://www.linkedin.com/in/mathys-ollivier-george-4090bb366/" target="_blank">Linkedin</a> – <a href="https://github.com/Mathysog13" target="_blank">GitHub</a></p>
 </section>
-<div class="form-box" style="width: 300px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); font-family: Arial, sans-serif;">
-  <form action="traitement.php" method="POST">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
-
-    <label for="message">Message :</label>
-    <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
-
-    <button type="submit" style="width: 100%; padding: 10px; background-color: #095cd9; color: white; border: none; cursor: pointer;">Envoyer</button>
-  </form>
+  <section>
+    <div class="contactez-nous">
+<h1>Contactez-nous</h1>
+<p>Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+<form action="/page-traitement-donnees" method="post">
+<div>
+<label for="nom">Votre nom</label>
+<input type="text" id="nom" name="nom" placeholder="Martin" required>
 </div>
+<div>
+<label for="email">Votre e-mail</label>
+<input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+</div>
+<div>
+<label for="sujet">Quel est le sujet de votre message ?</label>
+<select name="sujet" id="sujet" required>
+<option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+<option value="probleme-compte">Problème avec mon compte</option>
+<option value="question-produit">Question à propos d’un produit</option>
+<option value="suivi-commande">Suivi de ma commande</option>
+<option value="autre">Autre...</option>
+</select>
+</div>
+<div>
+<label for="message">Votre message</label>
+<textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+</div>
+<div>
+<button type="submit">Envoyer mon message</button>
+</div>
+</form>
+</div>
+  </section>
+
 <footer>
   <p>© 2025 Prénom Nom</p>
 </footer>
